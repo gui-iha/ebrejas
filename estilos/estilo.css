@@ -15,6 +15,20 @@ li {
 
 /* Add a black background color to the top navigation */
 /* Create a top navigation bar with a black background color  */
+
+.bannerSuperior{
+  background-color: #00d000;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.bannerSuperior p {
+  text-align: center;
+  font-size: 17px;
+  color: #f2f2f2;
+}
+
 .topnav {
   background-color: #333;
   overflow: hidden;
@@ -40,8 +54,22 @@ li {
 /* Create a right-aligned (split) link inside the navigation bar */
 .topnav a.split {
   float: right;
-  background-color: #04AA6D;
+  background-color: #333;
+}
 
+.topnav img.icon-carrinho {
+  float: right;
+  margin-right: 10px;
+  margin-top: 4px;
+  width: 2%;
+
+}
+.topnav a:hover {
+  background-color: #ddd;
+} 
+
+.topnav img.icon-carrinho:hover {
+    background-color: #ddd;
 }
 .topnav img.navlogo {
   float: none;
@@ -99,9 +127,9 @@ li {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
+/* Add background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #ddd;
 }
 
 /* Dropdown content (hidden by default) */
