@@ -54,13 +54,14 @@ html {
   width: 2%;
 
 }
-.topnav a:hover {
+/* .topnav a:hover {
   background-color: #ddd;
-} 
+}  */
 
 .topnav img.icon-carrinho:hover {
     background-color: #ddd;
 }
+
 .topnav img.navlogo {
   float: none;
   position: absolute;
@@ -160,6 +161,9 @@ html {
   font-family: arial;
   border-radius: 20px;
 }
+.card img{
+  max-height: 300px;
+}
 
 .price {
   color: grey;
@@ -178,9 +182,6 @@ html {
   font-size: 18px;
 }
 
-.card img {
-
-}
 
 .card button:hover {
   opacity: 0.7;
@@ -341,4 +342,41 @@ body {
   .footer__nav {
     flex: 2 0px;
   }
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+}
+
+td {
+  text-align: center;
+}
+
+tr:nth-child(even) td {
+  background-color: rgb(250,250,250);
+}
+
+tr:nth-child(odd) td {
+  background-color: rgb(245,245,245);
+}
+
+caption {
+  padding: 10px;
+}
+
+.neipamovie {
+  margin: 0 auto;
+  display: block;
 }
