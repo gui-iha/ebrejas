@@ -380,3 +380,9 @@ caption {
   margin: 0 auto;
   display: block;
 }
+
+.table {
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
