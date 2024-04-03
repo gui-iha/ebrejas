@@ -1,0 +1,53 @@
+------  diagrama de objetos  ------
+
+Este diagrama de objetos representa as interações entre os objetos no sistema de ecommerce.
+
+Objetos:
+- Cliente (atributos: email)
+- Pedido (atributos: Data, ProdutosTotais, endereçoEntrega, Status)
+- Vendedor (atributos: email)
+- Produto (atributos : Nome, Valor)
+
+Relações:
+- Cliente faz o pedido
+
+Notas:
+- o sistema recebe o pedido e processa as informaçoes de pagamento e entrega
+
+------  diagrama de pacotes  -------
+
+Este diagrama de objetos representa as interações entre os modulos no sistema de ecommerce.
+
+Modulos:
+
+- Compra:
+- Estoque:
+- Venda: 
+
+
+
+------  diagrama de sequencia  ------
+
+Este diagrama de sequência representa o fluxo de compra de um consumidor ao acessar o site e realizar o pedido e pagamento.
+
+Atores:
+- usuario
+
+Linhas de Vida:
+- usuario
+- website/app
+- sistema
+- Produto
+- Pedido e entrega
+
+Mensagens:
+- usuario faz o login, e realiza o pedido escolhendo os produtos e realiza o pagamento
+- website/app , fornece a interface para o usuario escolher os produtos e realizar o pedido
+- sistema verifica o login, processa os pagamentos e altera o status do pedido
+
+Fragmentos:
+- Loop: Usuario pode escolher varios produtos até confirmar o pedido.
+
+Notas:
+- O processo inclui validação de dados do cliente.
+- o sistema envia as informações do status do pedido e entrega ao site. 
