@@ -384,5 +384,10 @@ caption {
 .table {
   margin: auto;
   border-radius: 20px;
-  margin-bottom: 30px;
+}
+
+.mapa{
+  display: flex;
+  flex-direction: row; /* row é padrão */
+  justify-content: center;
 }
