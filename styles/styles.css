@@ -10,15 +10,6 @@
     background-size: cover;
     position: relative;
 }
-.address-first {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 60%;
-    left: 37%;
-    z-index: 9999;
-}
-
 .address-text {
     width: 100%;
     height: auto;
@@ -41,7 +32,7 @@
 }
 
 .address-text i {
-    font-size: 12px;
+    font-size: 14px;
     color: #f00;
 }
 
@@ -52,11 +43,11 @@
     text-align: center;
 }
 
-.tooltip i {
-    font-size: 36px;
+.tooltip-col i {
+    font-size: 20px;
     color: #ba3236;
-    padding-right: 5px;
-    padding-top: 2px;
+    padding-right: 1px;
+    padding-top: 1px;
 }
 
 .tooltiptext3{
@@ -85,4 +76,45 @@
 .tooltip-col:hover .tooltiptext3{
     visibility: visible;
 
+}
+
+.address-first {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 60%;
+    left: 37%;
+    z-index: 9999;
+}
+.address-second {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 21%;
+    left: 18%;
+    z-index: 9999;
+}
+.address-third {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 13%;
+    left: 40.7%;
+    z-index: 9999;
+}
+.address-fourth {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 22%;
+    left: 65%;
+    z-index: 9999;
+}
+.address-fifth {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 71.5%;
+    z-index: 9999;
 }
