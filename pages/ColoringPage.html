@@ -43,12 +43,12 @@
 
 <!-- Body Cards  -->
         <div id="container">
-          <button oninput="changeRed(this.value)" onclick="changeRed(this.value)">2024 color trends</button>
-          <button type="button" onclick="alert('Hello world!')">2020 color trends</button>
-          <button type="button" onclick="alert('Hello world!')">2015 color trends</button>
-          <button type="button" onclick="alert('Hello world!')">2010 color trends</button>
-          <button type="button" onclick="alert('Hello world!')">2000 color trends</button>
-          <button type="button" onclick="alert('Hello world!')">cyberpunk color trends</button>
+          <button type="button" onclick="changetrends(2024)">2024 color trends</button>
+          <button type="button" onclick="changetrends(2020)">2020 color trends</button>
+          <button type="button" onclick="changetrends(2015)">2015 color trends</button>
+          <button type="button" onclick="changetrends(2010)">2010 color trends</button>
+          <button type="button" onclick="changetrends(2000)">2000 color trends</button>
+          <button type="button" onclick="changetrends(2050)">cyberpunk color trends</button>
           <button type="button" name="custonRGB" value="Show Div" onclick="showDiv()">custon RGB color </button>
         </div>
         <div id="RGBChooser"  style="display:none;" class="answer_list">
@@ -82,78 +82,79 @@
             </tbody></table>
             <div id="colorchanger" style="height: 50px; background-color: rgb(106, 148, 0);"></div>
         </div>
-        <h2 style="text-align:center">Slideshow Gallery</h2>
+        <div id="gallerycolorchanger">
+          <h2 style="text-align:center">Slideshow Gallery</h2>
+          <div class="container" >
+            
+            
+              <div class="mySlides" >
+                <div class="numbertext">1 / 6</div>
+                <img src="../images/Grifo_MONARCAS -NEIPA.jpg" style="width:100% " >
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="../images/Grifo_REDSHAMROCK-irish-RED.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="../images/Grifo_SCHAWRZBIER-black.jpg" style="width:100%">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="../images/Cerveja-HocusPocus-Orange-Sunshine-Blonde-Ale-Garrafa-500ml.png" style="width:100%">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="../images/Cerveja-Stormy-The-Magic-of-the-snow.jpg" style="width:100%">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="../images/Cervejaria-Stormy-Double-Raindow-Double-West-Coast-IPA-Lata-473ml.png" style="width:100%">
+              </div>
+                
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <div class="row" id="imagesrow">
+                <div class="column">
+                  <img class="demo cursor" src="../images/Grifo_MONARCAS -NEIPA.jpg" style="width:100%" onclick="currentSlide(1)" alt="Grifo NEIPA Monarcas">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="../images/Grifo_REDSHAMROCK-irish-RED.jpg" style="width:100%" onclick="currentSlide(2)" alt="RedShamrock">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="../images/Grifo_SCHAWRZBIER-black.jpg" style="width:100%" onclick="currentSlide(3)" alt="Grifo_SCHAWRZBIER-black">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="../images/Cerveja-HocusPocus-Orange-Sunshine-Blonde-Ale-Garrafa-500ml.png" style="width:100%" onclick="currentSlide(4)" alt="OrangeSunshine Blonde ALE">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="../images/Cerveja-Stormy-The-Magic-of-the-snow.jpg" style="width:100%" onclick="currentSlide(5)" alt="Stormy the magic of snow">
+                </div>    
+                <div class="column">
+                  <img class="demo cursor" src="../images/Cervejaria-Stormy-Double-Raindow-Double-West-Coast-IPA-Lata-473ml.png" style="width:100%" onclick="currentSlide(6)" alt="Stormy Double rainbow">
+                </div>
+              </div>
+          </div>
+          
         
-
-
-        <div class="container" >
-          <div id="slidescolorchanger">
-          <div class="mySlides" >
-            <div class="numbertext">1 / 6</div>
-            <img src="../images/Grifo_MONARCAS -NEIPA.jpg" style="width:100% " >
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">2 / 6</div>
-            <img src="../images/Grifo_REDSHAMROCK-irish-RED.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">3 / 6</div>
-            <img src="../images/Grifo_SCHAWRZBIER-black.jpg" style="width:100%">
-          </div>
-            
-          <div class="mySlides">
-            <div class="numbertext">4 / 6</div>
-            <img src="../images/Cerveja-HocusPocus-Orange-Sunshine-Blonde-Ale-Garrafa-500ml.png" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <div class="numbertext">5 / 6</div>
-            <img src="../images/Cerveja-Stormy-The-Magic-of-the-snow.jpg" style="width:100%">
-          </div>
-            
-          <div class="mySlides">
-            <div class="numbertext">6 / 6</div>
-            <img src="../images/Cervejaria-Stormy-Double-Raindow-Double-West-Coast-IPA-Lata-473ml.png" style="width:100%">
-          </div>
-            
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-
-          <div class="row" id="imagesrow">
-            <div class="column">
-              <img class="demo cursor" src="../images/Grifo_MONARCAS -NEIPA.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="../images/Grifo_SCHAWRZBIER-black.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="../images/Grifo_REDSHAMROCK-irish-RED.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="../images/Cerveja-HocusPocus-Orange-Sunshine-Blonde-Ale-Garrafa-500ml.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="../images/Cerveja-Stormy-The-Magic-of-the-snow.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-            </div>    
-            <div class="column">
-              <img class="demo cursor" src="../images/Cervejaria-Stormy-Double-Raindow-Double-West-Coast-IPA-Lata-473ml.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-            </div>
-          </div>
         </div>
-</div>
         
 
 <!-- Footer -->
         <footer class="footer" >
           <div id="footercolorchanger">
             <div class="footer__addr">
-              <h1 class="footer__logo"><img class="navlogo" src="images/Logo_Prancheta.png" alt="logo navbar" style="width:30%;" ></h1>
+              <h1 class="footer__logo"><img class="navlogo" src="../images/Logo_Prancheta.png" alt="logo navbar" style="width:30%;" ></h1>
                   
               <h2>contato</h2>
               
@@ -169,20 +170,6 @@
             <ul class="footer__nav">
               <li class="nav__item">
                 <h2 class="nav__title">Media</h2>
-          
-                <!-- <ul class="nav__ul">
-                  <li>
-                    <a href="#">Online</a>
-                  </li>
-          
-                  <li>
-                    <a href="#">Print</a>
-                  </li>
-                      
-                  <li>
-                    <a href="#">Alternative Ads</a>
-                  </li>
-                </ul> -->
               </li>
               
               <li class="nav__item nav__item--extra">
@@ -220,7 +207,7 @@
               </div>
             </div>
           </div>
-          </footer>
+        </footer>
         
           
           
