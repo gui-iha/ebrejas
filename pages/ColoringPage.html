@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>ebrejas</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="author" content="Guilherme Iha">
+        <meta name="description" content="this is the main page of ebrejas ecommerce.">
+        <link rel="Shortcut Icon" href="../images/Logo-02.png" />
+
+        <link href="../estilos/estilo-color.css" rel="stylesheet" />
+        <script src="../scripts/main.js" defer></script>
+    </head>
+    <body >
+<!-- banner superior -->
+        <div class="bannerSuperior">
+            <p>Aceitamos pagamentos via pix | Compre parcelado sem juros!</h3>
+        </div>
+<!-- top navBar -->
+        <div class="topnav">
+            <a href="#carrinho" class="split"><i class="fa fa-shopping-cart"style="font-size:20px"></i>   Meu Carrinho</a>
+            <a href="../index.html"><img class="navlogo" src="../images/Logo_Prancheta.png" alt="logo navbar" ></a>
+        </div>
+<!-- Fullbanner  -->
+        <div class="fullbanner">
+            <img class="imgbanner" src="../images/full-banner-grifo.jpg" alt="fullbanner-grifo" >
+        </div>
+<!-- NavBar -->
+        <div class="navbar">
+            <a href="../index.html">Cervejas</a>
+            <div class="dropdown">
+              <button class="dropbtn">Estilos<i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="../pages/IPA.html">IPA</a>
+                <a href="#pilsen">Pilsen</a>
+              </div>
+            </div>
+            <a href="../pages/CostTable.html">tabela de preços</a>
+            <a href="../pages/Local.html">Local</a>
+        </div>
+
+<!-- Body Cards  -->
+        <div id="container">
+          <button oninput="changeRed(this.value)" onclick="changeRed(this.value)">2024 color trends</button>
+          <button type="button" onclick="alert('Hello world!')">2020 color trends</button>
+          <button type="button" onclick="alert('Hello world!')">2015 color trends</button>
+          <button type="button" onclick="alert('Hello world!')">2010 color trends</button>
+          <button type="button" onclick="alert('Hello world!')">2000 color trends</button>
+          <button type="button" onclick="alert('Hello world!')">cyberpunk color trends</button>
+          <button type="button" name="custonRGB" value="Show Div" onclick="showDiv()">custon RGB color </button>
+        </div>
+        <div id="RGBChooser"  style="display:none;" class="answer_list">
+          <table class="w3-table w3-border" style="width:100%">
+            <tbody><tr>
+            <th>Red</th>
+            <th>Green</th>
+            <th>Blue</th>
+            </tr>
+            <tr>
+            <td id="valRed">255</td>
+            <td id="valGreen">103</td>
+            <td id="valBlue">178</td>
+            </tr>
+            <tr>
+            <td id="red" style="height:50px;background-color:red"></td>
+            <td id="green" style="background-color:green"></td>
+            <td id="blue" style="background-color:blue"></td>
+            </tr>
+            <tr>
+            <td>
+            <input oninput="changeRed(this.value)" onchange="changeRed(this.value)" type="range" id="slideRed" name="slideRed" min="0" max="255">
+            </td>
+            <td>
+            <input oninput="changeGreen(this.value)" onchange="changeGreen(this.value)" type="range" id="slideGreen" name="slideGreen" min="0" max="255">
+            </td>
+            <td>
+            <input oninput="changeBlue(this.value)" onchange="changeBlue(this.value)" type="range" id="slideBlue" name="slideBlue" min="0" max="255">
+            </td>
+            </tr>
+            </tbody></table>
+            <div id="colorchanger" style="height: 50px; background-color: rgb(106, 148, 0);"></div>
+        </div>
+        <h2 style="text-align:center">Slideshow Gallery</h2>
+        
+
+
+        <div class="container" >
+          <div id="slidescolorchanger">
+          <div class="mySlides" >
+            <div class="numbertext">1 / 6</div>
+            <img src="../images/Grifo_MONARCAS -NEIPA.jpg" style="width:100% " >
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="../images/Grifo_REDSHAMROCK-irish-RED.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="../images/Grifo_SCHAWRZBIER-black.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="../images/Cerveja-HocusPocus-Orange-Sunshine-Blonde-Ale-Garrafa-500ml.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="../images/Cerveja-Stormy-The-Magic-of-the-snow.jpg" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="../images/Cervejaria-Stormy-Double-Raindow-Double-West-Coast-IPA-Lata-473ml.png" style="width:100%">
+          </div>
+            
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="row" id="imagesrow">
+            <div class="column">
+              <img class="demo cursor" src="../images/Grifo_MONARCAS -NEIPA.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../images/Grifo_SCHAWRZBIER-black.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../images/Grifo_REDSHAMROCK-irish-RED.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../images/Cerveja-HocusPocus-Orange-Sunshine-Blonde-Ale-Garrafa-500ml.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="../images/Cerveja-Stormy-The-Magic-of-the-snow.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="../images/Cervejaria-Stormy-Double-Raindow-Double-West-Coast-IPA-Lata-473ml.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+            </div>
+          </div>
+        </div>
+</div>
+        
+
+<!-- Footer -->
+        <footer class="footer" >
+          <div id="footercolorchanger">
+            <div class="footer__addr">
+              <h1 class="footer__logo"><img class="navlogo" src="images/Logo_Prancheta.png" alt="logo navbar" style="width:30%;" ></h1>
+                  
+              <h2>contato</h2>
+              
+              <address>
+                Telefone: (19) 99374-3310<br>
+                Whatsapp: (19) 99374-3310<br>
+                E-mail: atendimento@ebrejas.com.br<br>
+                    
+                <a class="footer__btn" href="mailto:example@gmail.com">Email</a>
+              </address>
+            </div>
+            
+            <ul class="footer__nav">
+              <li class="nav__item">
+                <h2 class="nav__title">Media</h2>
+          
+                <!-- <ul class="nav__ul">
+                  <li>
+                    <a href="#">Online</a>
+                  </li>
+          
+                  <li>
+                    <a href="#">Print</a>
+                  </li>
+                      
+                  <li>
+                    <a href="#">Alternative Ads</a>
+                  </li>
+                </ul> -->
+              </li>
+              
+              <li class="nav__item nav__item--extra">
+                <h2 class="nav__title"></h2>
+                
+                <ul class="nav__ul nav__ul--extra">
+                  <li>
+                    <a href="https://www.ebrejas.com.br/">site Oficial</a>
+                  </li>
+                  
+                  
+                </ul>
+              </li>
+              
+              <li class="nav__item">
+                <h2 class="nav__title">Institucional</h2>
+                
+                <ul class="nav__ul">
+                  <li>
+                    <a href="#">Politica de Privacidade</a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">Termos de Uso</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            
+            <div class="legal">
+              <p>&copy; 2024 ebrejas comercio de cervejas artesanais. All rights reserved.</p>
+              
+              <div class="legal__links">
+                <span>Feito por puro <span class="heart">♥</span> ao mundo cervejeiro</span>
+              </div>
+            </div>
+          </div>
+          </footer>
+        
+          
+          
+    </body>
+</html>
