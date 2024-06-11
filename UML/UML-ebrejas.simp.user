@@ -1,8 +1,9 @@
 ﻿<user-preferences>
   <open-windows>
-    <window type="Diagram" resource="p374710ae30fc40e38af477e078f68602_275457631" />
     <window type="Diagram" resource="pba5e66d105284b7aa6ea357cdcff7d6c_777328473" />
-    <window type="Diagram" resource="p7ffa80b56d134b6580734f00c7e5eb5d_126873100" />
+    <window type="Diagram" resource="p7b52204d7f0c47828c7bfcdceb00acb9_799006900" />
     <window type="Diagram" resource="pffc7f8c2cc384b7d89336f881480cf99_285881007" />
+    <window type="Diagram" resource="p374710ae30fc40e38af477e078f68602_275457631" />
+    <window type="Diagram" resource="p7ffa80b56d134b6580734f00c7e5eb5d_126873100" />
   </open-windows>
 </user-preferences>
